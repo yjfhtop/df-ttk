@@ -120,8 +120,8 @@ export class StandardBulletStrategy {
     const pureDamage = BaseDamageCalculator.calculate(weapon, bulletData, hitPart, decay);
     
     // 计算穿透伤害
-    const penArmor = bulletData.armor[armorLevel].pen;
-    const penHelmet = bulletData.armor[helmetLevel].pen;
+    const penArmor = bulletData.armor[armorLevel].pen * (bulletData.baseArmorMult || 1);
+    const penHelmet = bulletData.armor[helmetLevel].pen * (bulletData.baseArmorMult || 1);
     const penF = pureDamage * (hitPart === 'head' ? penHelmet : penArmor);
     
     let finalDamage;

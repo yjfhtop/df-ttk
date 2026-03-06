@@ -1,8 +1,10 @@
 // 子弹数据
 export const bulletData = {
-  1: { 
+  1: {
+    // 肉伤倍数
     base: 1.1, 
-    armor: { 
+    armor: {
+      // armorMult： 甲伤倍数， pen: 对当前装备造成多少肉伤
       1: { armorMult: 0.6, pen: 0.5 }, 
       2: { armorMult: 0.6, pen: 0 }, 
       3: { armorMult: 0.4, pen: 0 }, 
@@ -110,6 +112,7 @@ export const bulletData = {
       6: { armorMult: 1, pen: 0.3 } 
     } 
   },
+  // 赛季子弹
   'BT +P': { 
     base: 1.1, 
     armor: { 
@@ -131,5 +134,41 @@ export const bulletData = {
       5: { armorMult: 1.1, pen: 0.5 }, 
       6: { armorMult: 1.3, pen: 0 } 
     } 
+  },
+  '76239 SUB 4': {
+    base: 1.05,
+    baseArmorMult: 1,
+    armor: {
+      1: { armorMult: 1, pen: 1 },
+      2: { armorMult: 1, pen: 1 },
+      3: { armorMult: 1, pen: 0.75 },
+      4: { armorMult: 1, pen: 0.5 },
+      5: { armorMult: 1, pen: 0 },
+      6: { armorMult: 0.6, pen: 0 }
+    }
+  },
+  '76239 SUB 5': {
+    base: 1.05,
+    baseArmorMult: 0.95,
+    armor: {
+      1: { armorMult: 1, pen: 1 },
+      2: { armorMult: 1, pen: 1 },
+      3: { armorMult: 1, pen: 1 },
+      4: { armorMult: 1, pen: 0.75 },
+      5: { armorMult: 1, pen: 0.5 },
+      6: { armorMult: 1, pen: 0 }
+    }
+  },
+  '300 SUB 4': {
+    base: 1.05,
+    baseArmorMult: 1,
+    armor: {
+      1: { armorMult: 1, pen: 1 },
+      2: { armorMult: 1, pen: 1 },
+      3: { armorMult: 1, pen: 0.75 },
+      4: { armorMult: 1, pen: 0.5 },
+      5: { armorMult: 1, pen: 0 },
+      6: { armorMult: 0.6, pen: 0 }
+    }
   },
 };

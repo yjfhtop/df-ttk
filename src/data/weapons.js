@@ -11,23 +11,35 @@ export const weapons = [
     {
       name: 'SR-3M',
       type: '冲锋枪',
+      // 衰减距离
       ranges: [15, 31, Infinity, Infinity],
+      // 衰减倍数
       decays: [1.0, 0.75, 0.65, 0.65, 0.65],
+      // 子弹飞行速度
       velocity: 330,
+      // 肉伤
       flesh: 36,
+      // 甲伤
       armor: 48,
+      // 射速
       rof: 747,
       triggerDelay: 0,
       barrels: [
         { 
-          name: 'SR-3M铸钢战术枪管', 
+          name: 'SR-3M铸钢战术枪管',
+          //  衰减倍数
           rangeMult: 1.18,
+          // 伤害加成
           damageBonus: 0,
+          // 护甲伤害加成
           armorDamageBonus: 0,
+          // 倍数
           rofMult: 1.0
         }
       ],
+      // 部位伤害
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
+      // 可以使用的子弹等级 以及名称
       allowedBullets: [3, 4, 5],
     },
     {
@@ -669,7 +681,7 @@ export const weapons = [
         }
       ],
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
-      allowedBullets: [1, 2, 3, 4, 5],
+      allowedBullets: [1, 2, 3, 4, 5, '76239 SUB 4'],
     },  
     {
       name: 'MK47',
@@ -765,8 +777,8 @@ export const weapons = [
       ranges: [40, 70, Infinity, Infinity],
       decays: [1.0, 0.85, 0.7, 0.7, 0.7],
       velocity: 630,
-      flesh: 34,
-      armor: 36,
+      flesh: 36,
+      armor: 37,
       rof: 632,
       triggerDelay: 0,
       barrels: [
@@ -1246,5 +1258,73 @@ export const weapons = [
       ],
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
       allowedBullets: [1, 2, 3, 4, 'RIP'],
-    }
+    },
+  {
+    name: 'MCX LT突击步枪',
+    type: '步枪',
+    // 衰减距离
+    ranges: [30, 50, Infinity, Infinity],
+    // 衰减倍数
+    decays: [1.0, 0.75, 0.65, 0.65, 0.65],
+    // 子弹飞行速度
+    velocity: 450,
+    // 肉伤
+    flesh: 34,
+    // 甲伤
+    armor: 26,
+    // 射速
+    rof: 840,
+    triggerDelay: 0,
+    barrels: [
+      {
+        name: 'MCX LT 焰魂枪管',
+        //  衰减倍数
+        rangeMult: 1,
+        // 伤害加成
+        damageBonus: 2,
+        // 护甲伤害加成
+        armorDamageBonus: 0,
+        // 倍数
+        // rofMult: 1.0357142857142858
+      },
+      {
+        name: 'MCX LT 猎手枪管',
+        //  衰减倍数
+        rangeMult: 1.3,
+        // 伤害加成
+        damageBonus: 0,
+        // 护甲伤害加成
+        armorDamageBonus: 0,
+        // 倍数
+        rofMult: 1.0
+      }
+    ],
+    // 部位伤害
+    mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.35 },
+    // 可以使用的子弹等级 以及名称
+    allowedBullets: [3, 4, 5, '300 SUB 4'],
+  },
+  {
+    name: 'MCX LT 焰魂+网',
+    type: '步枪',
+    // 衰减距离
+    ranges: [30, 50, Infinity, Infinity],
+    // 衰减倍数
+    decays: [1.0, 0.75, 0.65, 0.65, 0.65],
+    // 子弹飞行速度
+    velocity: 450,
+    // 肉伤
+    flesh: 36,
+    // 甲伤
+    armor: 26,
+    // 射速
+    rof: 870,
+    triggerDelay: 0,
+    barrels: [
+    ],
+    // 部位伤害
+    mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.35 },
+    // 可以使用的子弹等级 以及名称
+    allowedBullets: [3, 4, 5, '300 SUB 4'],
+  },
   ];
