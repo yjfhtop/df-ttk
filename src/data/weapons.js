@@ -681,7 +681,7 @@ export const weapons = [
         }
       ],
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
-      allowedBullets: [1, 2, 3, 4, 5, '76239 SUB 4'],
+      allowedBullets: [1, 2, 3, 4, 5, '76239 SUB 4', '76239 SUB 5'],
     },  
     {
       name: 'MK47',
@@ -711,7 +711,7 @@ export const weapons = [
         }
       ],
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
-      allowedBullets: [1, 2, 3, 4, 5],
+      allowedBullets: [1, 2, 3, 4, 5, '76239 SUB 4', '76239 SUB 5'],
     },
     {
       name: 'SCAR-H',
@@ -805,7 +805,7 @@ export const weapons = [
         }
       ],
       mult: { head: 1.9, chest: 1, stomach: 0.9, limbs: 0.4 },
-      allowedBullets: [1, 2, 3, 4, 5],
+      allowedBullets: [1, 2, 3, 4, 5, '76239 SUB 4', '76239 SUB 5'],
     },
     {
       name: 'AKS-74U',
